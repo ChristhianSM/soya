@@ -1,0 +1,14 @@
+@import './bases/normalize';
+@import './bases/variables';
+@import './bases/mixins';
+@import './bases/globales';
+@import './bases/utilidades';
+
+
+/* Layouts */
+@import './layout/header';
+@import './components/carrousel';
+@import './layout/destacados';
+@import './layout/productos';
+@import './layout/mediosPago';
+@import './layout/footer';

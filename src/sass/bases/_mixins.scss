@@ -1,0 +1,22 @@
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media (max-width: 488px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin desktop-2 {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}

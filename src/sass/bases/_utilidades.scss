@@ -1,0 +1,20 @@
+.incorrecto {
+    border-color: red !important;
+}
+
+.correcto {
+    border-color: green !important;
+}
+
+.error {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}

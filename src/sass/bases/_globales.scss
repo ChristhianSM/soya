@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $fuente;
+    position: relative;
+}
+
+h1,h2,h3,p,a{
+    margin: 0;
+    font-family: $fuente;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    padding-top:10rem ;
+}
+
+.contenedor{
+    max-width: 150rem;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.subir {
+    position: fixed;
+    right: -10px;
+    bottom: -20px;
+    padding: 10px;
+    font-size: 2rem;
+    color: black;
+    transition: all 0.5s;
+
+}
