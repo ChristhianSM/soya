@@ -11,18 +11,23 @@
     <!-- Iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Estilos -->
     <link rel="stylesheet" href="./src/sass/app.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <h1>Soya Deco</h1>
+            <img src="./src/img/logo-texto.png" alt="logo-texto">
         </div>
         <div class="navegacion">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="#productos">Productos</a></li>
                 <li><a href="#">Quienes Somos</a></li>
                 <li><a href="#">Contacto</a></li>
         
@@ -43,13 +48,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active w-100 h-75">
-                <img src="./src/img/img1.jpg" class="d-block w-100" alt="...">
+                <img src="./src/img/banner-06-06.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item w-100 h-75">
-                <img src="./src/img/img2.jpg" class="d-block w-100" alt="...">
+                <img src="./src/img/bannerr-07.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item w-100 h-75">
-                <img src="./src/img/img3.jpg" class="d-block w-100" alt="...">
+                <img src="./src/img/bannerr-08.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -67,6 +72,7 @@
             <h2 class="titulo">Destacados</h2>
             <div class="contenedorDestacados">
             </div>
+            
             <div class="ventajas">
               <img src="./src/img/ventajas.JPG" alt="">
               <div class="contenedorVentajas">
@@ -80,6 +86,7 @@
               </div>
             </div>
         </section>
+
         <section id="productos" class="container">
           <h2 class="titulo"> Lista de productos</h2>
           <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aliquam ut facere rerum beatae minima laudantium</p>
@@ -88,25 +95,47 @@
             <a>Otros</a>
           </div>
           <div class="contenedorProductos"></div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="productoSeleccionado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <!-- <div class="informacionPago">
+                    <p><span>Medios de pago : </span> Efectivo o transferencia Bancaria</p>
+                    <p><span>Envios : </span> Pick up gratuito en lobos - Pcia de Bs As - CABA Zona alta palermo</p>
+                  </div> -->
+                  <!-- <a href="#" class="btnComprar">Comprar</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="mediosPago">
           <div class="contenedorMedios container">
-            <div class="card">
+            <div class="cardPago">
               <div class="imagen">
                 <img src="./src/img/metodo-de-pago.svg" alt="">
               </div>
               <h3  class="titulo">Medios de pago</h3>
               <p>Podes hacer tu compra con efectivo o transferencia bancaria</p>
             </div>
-            <div class="card">
+            <div class="cardPago">
               <div class="imagen">
                 <img src="./src/img/entrega.svg" alt="">
               </div>
               <h3 class="titulo">Envios</h3>
               <p>Podes hacer tu compra con efectivo o transferencia bancaria</p>
             </div>
-            <div class="card">
+            <div class="cardPago">
               <div class="imagen">
                 <img src="./src/img/refill.svg" alt="">
               </div>

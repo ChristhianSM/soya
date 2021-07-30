@@ -9,14 +9,15 @@ html{
 }
 
 body{
-    font-family: $fuente;
+    font-family: $fuenteTexto;
     position: relative;
 }
 
 h1,h2,h3,p,a{
     margin: 0;
-    font-family: $fuente;
+    font-family: $fuenteTexto;
     font-size: 1.6rem;
+    color: #2b2d42;
 }
 
 a{
@@ -29,6 +30,10 @@ img {
 
 main {
     padding-top:10rem ;
+
+    @include tablet {
+        padding-top:15rem ;
+    }
 }
 
 .contenedor{

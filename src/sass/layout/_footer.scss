@@ -5,8 +5,13 @@
     text-align: center;
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 3rem;
         text-transform: uppercase;
+        color: white;
+
+        @include tablet {
+            font-size: 2rem;
+        }
     }
 
     .redes {
@@ -16,15 +21,19 @@
             margin-right: 5rem;
             color: $blanco;
             width: 5rem;
+
+            @include telefono {
+                margin-right: 0;
+            }
             
             i { 
-                padding: 2rem;
+                padding: 1rem;
                 border: 1px solid;
-                font-size: 8rem;
+                font-size: 4rem;
                 border-radius: 50%;
                 background-color: $blanco;
                 color: $colorTexto;
-                width: 100px;
+                width: 60px;
                 text-align: center;
             }
         }

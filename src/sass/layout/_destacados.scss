@@ -6,6 +6,10 @@
         font-size: 5rem;
         color: #e2ccac;
         margin-bottom: 2rem;
+
+        @include telefono {
+            font-size: 3rem;
+        }
     }
 
     .contenedorDestacados {
@@ -15,20 +19,39 @@
         gap: 1rem;
         margin-bottom: 3rem;
 
+        @include telefono {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .card {
             background-color: $bgColor;
             color: $blanco;
             border: none;
-
+            cursor: pointer;
+            
             img {
                 width: 100%;
-                height: 300px;
+                height: 350px;
+
+                @include tablet {
+                    height: 280px;
+                }
+
+                @include telefono {
+                    height: 230px;
+                }
             }
 
             .tituloProducto,
             .precioProducto {
+                color: #e2ccac;
+                text-transform: uppercase;
                 padding-top: 1rem;
                 font-size: 2.3rem;
+
+                @include telefono {
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -43,6 +66,11 @@
         img {
             grid-column-start: 2;
             grid-column-end: 3;
+
+            @include telefono {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
         }
 
         .contenedorVentajas {
@@ -55,10 +83,22 @@
                     color: $colorTexto;
                     font-size: 3rem;
 
+                    @include tablet {
+                        font-size: 2rem;
+                    }
+
+                    @include telefono {
+                        font-size: 1.5rem;
+                    }
+
                     i {
                         margin-right: 1rem;
                         font-size: 2rem;
-                    }
+
+                        @include telefono {
+                            font-size: 1.5rem;
+                        }
+                    }  
                 }
             }
         }

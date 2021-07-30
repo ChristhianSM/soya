@@ -1,0 +1,132 @@
+#productoSeleccionado {
+
+    .modal-header {
+        justify-content: space-between;
+        padding: 1rem 2.5rem;
+
+        .modal-title {
+            font-size: 3rem;
+        }
+
+        .btn-close{
+            border: 1px solid;
+            border-radius: 50%;
+            color: white;
+            background-color: #2b2d42;
+            font-size: 1.7rem;
+        }
+    }
+
+    .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2.5rem;
+
+         @include tablet {
+             display: block;
+         }
+
+        .info {
+            width: 40%;
+
+            @include tablet {
+                width: 100%;
+            }
+
+            h3, h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+
+                @include tablet {
+                    text-align: center;
+                }
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .estrellas {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+
+                 img{
+                     width: 20px;
+                     margin: 0 auto;
+                     object-fit: cover;
+                 }
+            }
+
+            .aromas {
+
+                p {
+                    font-weight: 900;
+                }
+
+                ul {
+                    
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    li {
+                        margin-bottom: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .imagenVela {
+            width: 55%;
+
+            @include tablet {
+                margin: 0 auto;
+            }
+
+            img {
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+        padding: 1rem 2.5rem;
+        background-color: $bgColor;
+        
+
+        .informacionPago {
+
+            p { 
+                color: white;
+                font-size: 1.4rem;
+                span {
+                    font-weight: 900;
+                }
+            }
+        }
+
+        a {
+            color: #8b8179;
+            border: 2px solid ;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-size: 1.9rem;
+            font-weight: 700;
+            border-radius: 10px;
+            display: inline-block;
+
+            @include tablet {
+                margin: 0 auto;
+            }
+        }
+    }
+}

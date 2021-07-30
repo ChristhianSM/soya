@@ -4,15 +4,25 @@
     position: fixed;
     display: flex;
     justify-content: end;
+    align-items: center;
     z-index: 5;
+
+    @include tablet {
+        display: block;
+    }
 
     .logo {
         padding: 1rem 0;
         flex-grow: 2;
         text-align: end;
 
-        h1{
-            font-size: 3rem;
+        @include tablet {
+            text-align: center;
+        }
+
+        img{
+            width: 70px;
+            height: 30px;
         }
     }
 
@@ -23,10 +33,15 @@
         flex-grow: 1;
         border-top-left-radius: 3rem;
         border-bottom-left-radius: 3rem;
+
+        @include telefono {
+            margin-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
         
         ul {
             display: flex;
-            // justify-content: space-between;
             align-items: center;
             list-style: none;
             margin: 0;
@@ -42,12 +57,14 @@
 
                 input {
                     padding: 10px;
-                    padding-right: 25px;
+                    padding-right: 30px;
                     outline: none;
                     border: 1px solid $blanco;
                     border-radius: 10px;
                     width: 200px;
                     background-color: transparent;
+                    color: $blanco;
+                    font-size: 1.8rem;
                 }
 
                 &.busqueda {

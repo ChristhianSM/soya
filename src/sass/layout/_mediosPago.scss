@@ -9,7 +9,11 @@
         gap: 4rem;
         align-items: center;
 
-        .card {
+        @include telefono {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .cardPago {
             text-align: center;
             border: none;
             background-color: transparent;
@@ -18,9 +22,26 @@
 
             .imagen {
                 padding: 4rem;
-                border: 4px solid $negro;
+                border: 5px solid $blanco;
                 border-radius: 50%;
-                height: 350px;
+                height: 300px;
+                width: 300px;
+                margin: 0 auto;
+
+                @include desktop {
+                    height: 280px;
+                    width: 280px;
+                }
+
+                @include tablet {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                @include telefono {
+                    height: 150px;
+                    width: 150px;
+                }
 
                 img {
                     width: 100%;
@@ -29,13 +50,35 @@
             }
 
             .titulo {
-                font-size: 4rem;
+                font-size: 3rem;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
+                color: white;
+                font-weight: 900;
+
+                @include tablet {
+                    font-size: 2rem;
+                }
+
+                @include telefono {
+                    font-size: 1.8rem;
+                }
+                
             }
 
             p {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
+                color: white;
+
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+
+                @include telefono {
+                    font-size: 1.3rem;
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
         }
     }
