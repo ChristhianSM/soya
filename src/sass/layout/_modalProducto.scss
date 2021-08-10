@@ -51,7 +51,7 @@
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
             }
-
+            
             .estrellas {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -80,6 +80,20 @@
                         margin-bottom: 0.5rem;
                         font-size: 1.5rem;
                     }
+                }
+            }
+
+            .divCantidad {
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                input {
+                    width: 50px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -114,15 +128,16 @@
             }
         }
 
-        a {
+        button {
             color: #8b8179;
             border: 2px solid ;
             padding: 1rem 2rem;
             text-transform: uppercase;
-            font-size: 1.9rem;
+            font-size: 1.5rem;
             font-weight: 700;
             border-radius: 10px;
             display: inline-block;
+            background-color: transparent;
 
             @include tablet {
                 margin: 0 auto;

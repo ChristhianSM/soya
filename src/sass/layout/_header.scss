@@ -78,6 +78,24 @@
                         top: 6px;
                     }
                 }
+
+                &.carrito-compras {
+                    flex-grow: 2;
+                    text-align: center;
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+
+                    p{
+                        color: white;
+                    }
+
+                    i {
+                        font-size: 3rem;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
