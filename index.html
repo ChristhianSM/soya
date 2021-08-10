@@ -6,11 +6,13 @@
     <title>Proyecto Soya</title>
     
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous">
 
     <!-- Iconos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+    <script src="https://use.fontawesome.com/d48371dd5d.js"></script>
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,47 @@
     <link rel="stylesheet" href="./src/sass/app.css">
 </head>
 <body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-5" style="background-color: #24263d;">
+     <a class="navbar-brand" href="/">
+       <div class="logo-image">
+             <img src="/src/img/logo-texto.png" class="img-fluid" width="100" height="75">
+       </div>
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon">   
+         <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+     </span>
+     </button>
+   
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#about">About</a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Productos
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">Velas</a>
+             <a class="dropdown-item" href="#">Otros productos</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Contacto</a>
+         </li>
+       </ul>
+       <div class="iconos-inline my-2 my-lg-0">
+         <a href=""> <i class="fa fa-instagram fa-2x mr-2  insta" aria-hidden="true" style="color: #838bcf;"></i></a>
+         <a href=""> <i class="fa fa-facebook-square fa-2x face" aria-hidden="true" style="color: #838bcf;"></i></a>
+       </div>
+     </div>
+   </nav>
+  </header>
    <!--  <header class="header">
         <div class="logo">
             <img src="./src/img/logo-texto.png" alt="logo-texto">
@@ -83,6 +126,28 @@
                   <li><i class="fas fa-asterisk"></i>Beneficio 3</li>
                   <li><i class="fas fa-asterisk"></i>Otro</li>
                 </ul>
+              </div>
+            </div>
+        </section>
+
+        <section>
+          <div id="about" class="quines-somos">
+            <div class="row">
+                   <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                         <div class="vela-img">
+                       <img class="img-fluid" src="/src/img/paulina.png" alt="">
+                     </div>
+                   </div>
+                 
+           
+                 <div class="col=-12 col-md-8 col-lg-8 col-xl-4 overlay">
+                       <h2 class="overlay-text">Quien soy</h2>
+                       <p class="overlay-text">Hola! Mi nombre es Paulina y soy la fundadora de Soya, una marca que nace en un contexto de pandemia y que se sostiene en el tiempo.</p>
+                       <p class="overlay-text">En Soya podras encontrar velas de cera de soja aromaticas. Nuestras velas son 100% naturales y ecologicas, tambien podras encontrar complementos como bombones aromaricos y apagavelas. Cada vela es unica ya que son realizadas de forma artesanal por mi. Te invito a recorrer los diferentes aromas, colores y texturas que Soya tiene para vos. Bienvenido!</p>
+                 </div>
+                 <div class="col-12 col-md-12 col-lg-12 col-xl-4">
+                       <img class="img-fluid back" src="/src/img/soya-back.png" alt="">
+                 </div>
               </div>
             </div>
         </section>
@@ -156,6 +221,8 @@
 
     <script src="./src/js/app.js" type="module"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
