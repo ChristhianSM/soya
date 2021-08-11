@@ -574,12 +574,31 @@ main {
   height: 35px;
 }
 
+.fa-2x {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #777a9c;
+}
+
+.carrousel {
+  margin-top: -5rem;
+}
+
 .carrousel img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: center;
   height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .carrousel {
+    margin-top: -10rem;
+  }
 }
 
 #destacados {

@@ -1,9 +1,15 @@
 .carrousel {
-    
+    margin-top: -5rem;
     img {
         width: 100%;
         object-fit: cover;
         position: center;
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .carrousel {
+        margin-top: -10rem;
     }
 }
