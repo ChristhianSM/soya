@@ -428,6 +428,11 @@ main {
   color: white;
 }
 
+.btnSeleccionado {
+  background-color: #393b50;
+  color: white;
+}
+
 /* Layouts */
 /* .header {
     margin-top: 3rem;
@@ -574,12 +579,31 @@ main {
   height: 35px;
 }
 
+.fa-2x {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #777a9c;
+}
+
+.carrousel {
+  margin-top: -5rem;
+}
+
 .carrousel img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: center;
   height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .carrousel {
+    margin-top: -10rem;
+  }
 }
 
 #destacados {
@@ -717,7 +741,7 @@ main {
 
 @media only screen and (min-width: 1100px) {
   .back {
-    height: 610px;
+    height: 100%;
   }
 }
 
@@ -746,6 +770,12 @@ main {
 
 .overlay-text {
   color: beige !important;
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 2rem;
+  }
 }
 
 #productos {

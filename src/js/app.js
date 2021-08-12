@@ -3,10 +3,33 @@ import {productos} from '../data/datos.js'
 /* Variables */
 const contenedorCardDestacados = document.querySelector('.contenedorDestacados');
 const contenedorCardProductos = document.querySelector('.contenedorProductos');
+const btnVelas = document.querySelector('.btnVelas');
+const btnOtros = document.querySelector('.btnOtros');
+
+eventosListener();
+function eventosListener() {
+    btnVelas.addEventListener("click", () => {
+        const productosVela = productos.filter( producto => producto.tipo === "vela");
+        mostrarProductos(productosVela);
+
+        /* Pintar btn Velas */
+        btnVelas.classList.add('btnSeleccionado');
+        btnOtros.classList.remove('btnSeleccionado')
+    })
+
+   btnOtros.addEventListener("click", () => {
+        const productosOtros = productos.filter( producto => producto.tipo === "otro");
+        mostrarProductos(productosOtros);
+
+        /* Pintar btn Velas */
+        btnVelas.classList.remove('btnSeleccionado');
+        btnOtros.classList.add('btnSeleccionado')
+    })
+}
 
 document.addEventListener('DOMContentLoaded',() => {
     mostrarDestacados();
-    mostrarProductos();
+    mostrarProductos(productos);
 })
 
 function mostrarDestacados(){
@@ -38,8 +61,11 @@ function mostrarDestacados(){
     })
 }
 
-function mostrarProductos() {
-    productos.forEach(producto => {
+function mostrarProductos(arregloProductos) {
+
+    limpiarHtml();
+
+    arregloProductos.forEach(producto => {
         const card = document.createElement('div');
         card.classList.add('card');
         card.dataset.id = producto.id
@@ -124,4 +150,10 @@ function comprarProducto(){
         const URL = `https://api.whatsapp.com/send?phone=+051959686193&text=*_Soya_*%0A*Hola ¿Qué tal como estas?*%0A%0A*Quisiera confirmar la siguiente Orden:*%0A*${nombre}   ->Precio: $${precio}`
         window.open(URL, "_blank")
     })
+}
+
+function limpiarHtml() {
+    while (contenedorCardProductos.firstChild) {
+        contenedorCardProductos.removeChild(contenedorCardProductos.firstChild)
+    }
 }

@@ -13,7 +13,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "vela"
     },
     {
         id: 2,
@@ -29,7 +30,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "vela"
     },
     {
         id: 3,
@@ -45,7 +47,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "vela"
     },
     {
         id: 4,
@@ -61,7 +64,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "vela"
     },
     {
         id: 5,
@@ -77,7 +81,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "vela"
     },
     {
         id: 6,
@@ -93,7 +98,8 @@ export const productos = [
             "Nardo",
             "Tilo"
         ], 
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus."
+        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        tipo : "otro"
     },
 
 ]   
