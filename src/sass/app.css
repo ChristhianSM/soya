@@ -357,6 +357,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p, a {
