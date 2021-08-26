@@ -105,12 +105,12 @@ function productoSeleccionado(){
                     <h3>Vela</h3>
                     <h2>${productoEcontrado.nombre}</h2>
                     <div class = "estrellas">
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen no encontrada"/>
                     </div>
                     <p>${productoEcontrado.descripcion}</p>
                     <div class = "aromas">
