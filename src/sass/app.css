@@ -609,6 +609,8 @@ main {
   font-size: 5rem;
   color: #e2ccac;
   margin-bottom: 2rem;
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 
 @media (max-width: 488px) {
@@ -772,11 +774,18 @@ main {
   }
 }
 
+.titulo-principal {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
+}
+
 #productos {
   margin-top: 5rem;
 }
 
 #productos .titulo {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
   font-size: 5rem;
   color: #2b2d42;
 }
@@ -1138,6 +1147,8 @@ main {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 
 @media (max-width: 768px) {
@@ -1172,5 +1183,10 @@ main {
   color: #2b2d42;
   width: 60px;
   text-align: center;
+}
+
+.ventajas {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 /*# sourceMappingURL=app.css.map */

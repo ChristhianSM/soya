@@ -48,13 +48,13 @@ function mostrarDestacados(){
             tituloProducto.classList.add('tituloProducto');
             tituloProducto.textContent = producto.nombre;
     
-            const precioProducto = document.createElement('p');
+           /*  const precioProducto = document.createElement('p');
             precioProducto.classList.add('precioProducto');
-            precioProducto.textContent = `$${producto.precio}`;
+            precioProducto.textContent = `$${producto.precio}`; */
     
             card.appendChild(imagen)
             card.appendChild(tituloProducto)
-            card.appendChild(precioProducto);
+           /*  card.appendChild(precioProducto); */
     
             contenedorCardDestacados.appendChild(card);
         }
