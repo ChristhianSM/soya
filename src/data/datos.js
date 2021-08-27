@@ -13,7 +13,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Este combo es el preferido de todxs. Son lindas, versátiles, cómodas y decorativas. Son muy utilizadas para regalos ya que su precio es económico. Si queres quedar 10 puntos, esta es tu opción ideal!",
         tipo : "vela"
     },
     {
@@ -30,7 +30,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Esta Soya es ideal para espacios como habitaciones o baños ya que combina con todos los espacios por su óptimo tamaño. Tiene una capacidad de 170 gr. ",
         tipo : "vela"
     },
     {
@@ -47,7 +47,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Este modelo es todo lo que está bien. Ideal para utilizar en mesas ratonas por su tamaño y por su aroma único. Tiene una capacidad de 700 gr de cera de soja. Más linda imposible!.",
         tipo : "vela"
     },
     {
@@ -64,7 +64,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Este combo es el preferido de todxs. Son lindas, versátiles, cómodas y decorativas. Son muy utilizadas para regalos ya que su precio es económico. Si queres quedar 10 puntos, esta es tu opción ideal!",
         tipo : "vela"
     },
     {
@@ -81,7 +81,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ],
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Su diseño es único y su aroma inigualable. la podes elegir en 3 colores diferentes. Soya ideal para levantar cualquier ambiente. tiene 250 gr de capacidad. Envase de aluminio anodizado.",
         tipo : "vela"
     },
     {
@@ -98,7 +98,7 @@ export const productos = [
             "Nardo",
             "Tilo"
         ], 
-        descripcion : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias animi, cumque aperiam, fuga incidunt dolores ullam quos veritatis voluptatibus sit similique hic in officiis corrupti modi consectetur dolore non repellendus.",
+        descripcion : "Esta edición especial es la más linda del mundo! le da calidez a cualquier espacio. Ideal para mesa de luz. El crochet es también artesanal.",
         tipo : "otro"
     },
 

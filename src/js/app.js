@@ -48,13 +48,13 @@ function mostrarDestacados(){
             tituloProducto.classList.add('tituloProducto');
             tituloProducto.textContent = producto.nombre;
     
-            const precioProducto = document.createElement('p');
-            precioProducto.classList.add('precioProducto');
-            precioProducto.textContent = `$${producto.precio}`;
+            // const precioProducto = document.createElement('p');
+            // precioProducto.classList.add('precioProducto');
+            // precioProducto.textContent = `$${producto.precio}`;
     
             card.appendChild(imagen)
             card.appendChild(tituloProducto)
-            card.appendChild(precioProducto);
+            // card.appendChild(precioProducto);
     
             contenedorCardDestacados.appendChild(card);
         }
@@ -128,7 +128,7 @@ function productoSeleccionado(){
             modalFooter.innerHTML = `
                 <div class="informacionPago">
                     <p><span>Medios de pago : </span> Efectivo o transferencia Bancaria</p>
-                    <p><span>Envios : </span> Pick up gratuito en lobos - Pcia de Bs As - CABA Zona alta palermo</p>
+                    <p><span>Envios : </span> Pick up gratuito en Lobos - Pcia de Bs As - CABA Zona Alto Palermo</p>
                   </div>
                 <a href="#" class="btnComprar" data-id = ${productoEcontrado.id}>Comprar</a>
             `
