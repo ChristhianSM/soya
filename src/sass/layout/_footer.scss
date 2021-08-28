@@ -8,6 +8,8 @@
         font-size: 3rem;
         text-transform: uppercase;
         color: white;
+        font-family: Anabele;
+        src: url("/src/font/Anabele.otf") format("opentype");
 
         @include tablet {
             font-size: 2rem;

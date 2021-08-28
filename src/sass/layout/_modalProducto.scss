@@ -91,6 +91,10 @@
                 margin: 0 auto;
             }
 
+            @include tablet {
+                width: auto;
+            }
+
             img {
                 border-radius: 1rem;
             }

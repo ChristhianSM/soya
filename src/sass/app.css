@@ -376,7 +376,7 @@ img {
 }
 
 main {
-  padding-top: 10rem;
+  padding-top: 9rem;
 }
 
 @media (max-width: 768px) {
@@ -591,20 +591,53 @@ main {
 
 .carrousel {
   margin-top: -5rem;
-}
-
-.carrousel img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: center;
-  height: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 950px) {
   .carrousel {
     margin-top: -10rem;
   }
+}
+
+/* Swipper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 700px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide-imagen-velas {
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #destacados {
@@ -616,6 +649,8 @@ main {
   font-size: 5rem;
   color: #e2ccac;
   margin-bottom: 2rem;
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 
 @media (max-width: 488px) {
@@ -769,14 +804,19 @@ main {
   font-size: 2.4rem;
 }
 
-.overlay-text {
+.quines-somos .overlay-text {
   color: beige !important;
 }
 
 @media (max-width: 768px) {
-  .overlay-text {
+  .quines-somos .overlay-text p {
     font-size: 2rem;
   }
+}
+
+.titulo-principal {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 
 #productos {
@@ -784,6 +824,8 @@ main {
 }
 
 #productos .titulo {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
   font-size: 5rem;
   color: #2b2d42;
 }
@@ -990,6 +1032,12 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  #productoSeleccionado .modal-body .imagenVela {
+    width: auto;
+  }
+}
+
 #productoSeleccionado .modal-body .imagenVela img {
   border-radius: 1rem;
 }
@@ -1099,7 +1147,7 @@ main {
   font-size: 3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: white;
+  color: black;
   font-weight: 900;
 }
 
@@ -1117,7 +1165,7 @@ main {
 
 #mediosPago .contenedorMedios .cardPago p {
   font-size: 2.3rem;
-  color: white;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -1145,6 +1193,8 @@ main {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 
 @media (max-width: 768px) {
@@ -1179,5 +1229,10 @@ main {
   color: #2b2d42;
   width: 60px;
   text-align: center;
+}
+
+.ventajas {
+  font-family: Anabele;
+  src: url("/src/font/Anabele.otf") format("opentype");
 }
 /*# sourceMappingURL=app.css.map */

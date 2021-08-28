@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -29,18 +30,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> 
+
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Estilos -->
     <link rel="stylesheet" href="./src/sass/app.css">
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top mb-5" style="background-color: #24263d;">
+    <nav class="navbar navbar-expand-lg fixed-top mb-4 mt-4" style="background-color: #24263d;">
       <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
         <div class="logo-image">
-          <img src="/src/img/logo-texto.png" class="img-fluid" width="100" height="75">
+          <img src="/src/img/logo-texto.png" class="img-fluid" width="100" height="75" alt="Imagen no encontrada">
         </div>
       </a>
 
@@ -63,17 +71,19 @@
                 Productos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Velas</a></li>
-                <li><a class="dropdown-item" href="#">Otros</a></li>
+                <li><a class="dropdown-item" href="#productos">Velas</a></li>
+                <li><a class="dropdown-item" href="#productos">Otros</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="false">Contacto</a>
-            </li>
+         
           </ul>
           <div class="iconos-inline my-2 my-lg-0">
-            <a href=""> <i class="fa fa-instagram fa-2x mr-2  insta" aria-hidden="true" style="color: #838bcf;"></i></a>
-            <a href=""> <i class="fa fa-facebook-square fa-2x ml-2 face" aria-hidden="true" style="color: #838bcf;"></i></a>
+            <a href="https://www.instagram.com/soya.deco/" aria-label = "instagram"> 
+              <i class="fa fa-instagram fa-2x mr-2  insta" aria-hidden="true" style="color: #838bcf;" ></i>
+            </a>
+            <a href="#" aria-label = "facebook"> 
+              <i class="fa fa-facebook-square fa-2x ml-2 face" aria-hidden="true" style="color: #838bcf;" ></i>
+            </a>
           </div>
         </div>
       </div>
@@ -81,34 +91,27 @@
   </header>
   
     <main>
-        <div class="carrousel">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/img/Banner_1.jpg" alt="Imagen no encontrada">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active w-100 h-75">
-                <img src="./src/img/banner-06-06.jpg" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item w-100 h-75">
-                <img src="./src/img/bannerr-07.jpg" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item w-100 h-75">
-                <img src="./src/img/bannerr-08.jpg" class="d-block w-100 img-fluid" alt="...">
-              </div>
+            <div class="swiper-slide">
+              <img src="./src/img/Banner_2.jpg" class="img-fluid" alt="Imagen no encontrada">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="swiper-slide">
+              <img src="./src/img/Banner_3.jpg" class="img-fluid" alt="Imagen no encontrada">
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/Banner_4.jpg" class="img-fluid" alt="Imagen no encontrada">
+            </div>
           </div>
+          <div class="swiper-button-next" aria-labelledby="siguiente"></div>
+          <div class="swiper-button-prev" aria-labelledby="anterior"></div>
+          <div class="swiper-pagination" aria-labelledby="paginacion"></div>
         </div>
+
 
         <section id="destacados" class="container">
             <h1 class="titulo">Destacados</h1>
@@ -116,14 +119,14 @@
             </div>
             
             <div class="ventajas">
-              <img src="./src/img/ventajas.JPG" alt="">
+              <img src="./src/img/ventajas.JPG" alt="Imagen no encontrada">
               <div class="contenedorVentajas">
                 <ul>
-                  <li><i class="fas fa-asterisk"></i>Biodegradables</li>
-                  <li><i class="fas fa-asterisk"></i>Perfumadas</li>
-                  <li><i class="fas fa-asterisk"></i>Baja Combustion</li>
-                  <li><i class="fas fa-asterisk"></i>Beneficio 3</li>
-                  <li><i class="fas fa-asterisk"></i>Otro</li>
+                  <li><i class="fa fa-asterisk" aria-hidden="true"></i>Biodegradables</li>
+                  <li><i class="fa fa-asterisk" aria-hidden="true"></i>Perfumadas</li>
+                  <li><i class="fa fa-asterisk" aria-hidden="true"></i>Baja Combustion</li>
+                  <li><i class="fa fa-asterisk" aria-hidden="true"></i>Beneficio 3</li>
+                  <li><i class="fa fa-asterisk" aria-hidden="true"></i>Otro</li>
                 </ul>
               </div>
             </div>
@@ -134,18 +137,18 @@
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                   <div class="vela-img">
-                    <img class="img-fluid" src="/src/img/paulina.png" alt="" width="100">
+                    <img class="img-fluid" src="/src/img/paulina.jpg" alt="Imagen no encontrada" width="100">
                   </div>
                 </div>
     
-                <div class="col=-12 col-md-8 col-lg-8 col-xl-4 overlay">
-                  <h2 class="overlay-text">Quien soy</h2>
+                <div class="col=-12 col-md-8 col-lg-8 col-xl-4 overlay align-self-center text-center">
+                  <h2 class="titulo-principal overlay-text">Quien soy</h2>
                   <p class="overlay-text">Hola! Mi nombre es Paulina y soy la fundadora de Soya, una marca que nace en un contexto de pandemia y que se sostiene en el tiempo.</p>
                   <p class="overlay-text">En Soya podras encontrar velas de cera de soja aromaticas. Nuestras velas son 100% naturales y ecologicas, tambien podras encontrar complementos como bombones aromaricos y apagavelas. Cada vela es unica ya que son realizadas de forma artesanal por mi. Te invito a recorrer los diferentes aromas, colores y texturas que Soya tiene para vos. Bienvenido!</p>
                 </div>
                 
                 <div class="col-12 col-md-12 col-lg-12 col-xl-4">
-                  <img class="img-fluid back" src="/src/img/soya-back.png" alt="" height="100">
+                  <img class="img-fluid back" src="/src/img/soya-back.jpg" alt="Imagen no encontrada" height="100">
                 </div>
               </div>
             </div>
@@ -188,21 +191,21 @@
           <div class="contenedorMedios container">
             <div class="cardPago">
               <div class="imagen">
-                <img src="./src/img/metodo-de-pago.svg" alt="">
+                <img src="./src/img/metodo-de-pago.svg" alt="Imagen no encontrada">
               </div>
               <h3  class="titulo">Medios de pago</h3>
               <p>Podes hacer tu compra con efectivo o transferencia bancaria</p>
             </div>
             <div class="cardPago">
               <div class="imagen">
-                <img src="./src/img/entrega.svg" alt="">
+                <img src="./src/img/entrega.svg" alt="Imagen no encontrada">
               </div>
               <h3 class="titulo">Envios</h3>
               <p>Podes hacer tu compra con efectivo o transferencia bancaria</p>
             </div>
             <div class="cardPago">
               <div class="imagen">
-                <img src="./src/img/refill.svg" alt="">
+                <img src="./src/img/refill.svg" alt="Imagen no encontrada">
               </div>
               <h3 class="titulo">Refill</h3>
               <p>Podes hacer tu compra con efectivo o transferencia bancaria</p>
@@ -214,15 +217,38 @@
     <footer class="footer">
         <h2>Seguinos en nuestras redes Sociales</h2>
         <div class="redes">
-          <a href=""> <i class="fa fa-facebook-square fa-2x face" aria-hidden="true" style="color: #24263d;"></i></a>
-          <a href=""> <i class="fa fa-instagram fa-2x mr-2  insta" aria-hidden="true" style="color: #24263d;"></i></a>
+          <a href="#" aria-label = "facebook"> 
+            <i class="fa fa-facebook-square fa-2x face" aria-hidden="true" style="color: #24263d;"></i>
+          </a>
+          <a href="https://www.instagram.com/soya.deco/" aria-label = "instagram"> 
+            <i class="fa fa-instagram fa-2x mr-2  insta" aria-hidden="true" style="color: #24263d;"></i>
+          </a>
         </div>
     </footer>
 
-    <script src="./src/js/app.js" type="module"></script>
+    
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
+    <!-- Swipper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>

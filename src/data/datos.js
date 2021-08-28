@@ -3,7 +3,7 @@ export const productos = [
         id: 1,
         nombre: "Bombé Max",
         precio : 1500,
-        img : "../src/img/img1.jpg",
+        img : ["../src/img/img1.jpg", "../src/img/bombe-mini-1.jpg", "../src/img/img3.jpg"],
         destacado : true, 
         aromas : [
             "Coco Vainilla",
@@ -20,7 +20,7 @@ export const productos = [
         id: 2,
         nombre: "Soya Simple",
         precio : 1500,
-        img : "../src/img/img3.jpg",
+        img : ["../src/img/img3.jpg", "../src/img/soya-simple-1.jpg", "../src/img/soya-simple-2.jpg"],
         destacado : true,
         aromas : [
             "Coco Vainilla",
@@ -37,7 +37,7 @@ export const productos = [
         id: 3,
         nombre: "Cónica",
         precio : 1500,
-        img : "../src/img/img2.jpg",
+        img : ["../src/img/img2.jpg", "../src/img/conica-1.jpg","../src/img/conica-2.jpg"],
         destacado : true, 
         aromas : [
             "Coco Vainilla",
@@ -54,7 +54,7 @@ export const productos = [
         id: 4,
         nombre: "Bombé Mini",
         precio : 1500,
-        img : "../src/img/img4.jpg",
+        img : ["../src/img/img4.jpg", "../src/img/bombe-mini-1.jpg","../src/img/img4.jpg"],
         destacado : false, 
         aromas : [
             "Coco Vainilla",
@@ -71,7 +71,7 @@ export const productos = [
         id: 5,
         nombre: "Línea Metal",
         precio : 1500,
-        img : "../src/img/img5.jpg",
+        img : ["../src/img/img5.jpg", "../src/img/linea-metal-1.jpg", "../src/img/linea-metal-2.jpg"],
         destacado : false, 
         aromas : [
             "Coco Vainilla",
@@ -88,7 +88,7 @@ export const productos = [
         id: 6,
         nombre: "Soya + crochet",
         precio : 1500,
-        img : "../src/img/img6.jpg",
+        img : ["../src/img/img6.jpg", "../src/img/apagavela-1.jpg","../src/img/img6.jpg"],
         destacado : false,
         aromas : [
             "Coco Vainilla",

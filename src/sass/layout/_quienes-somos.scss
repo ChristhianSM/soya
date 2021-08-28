@@ -27,12 +27,20 @@
  .quines-somos p{
     font-size: 2.4rem;
  }
- .overlay-text{
+
+ .quines-somos .overlay-text{
    color: beige !important;
 
-   @include tablet() {
-      font-size: 2rem;
+   p{
+      @include tablet {
+         font-size: 2rem;
+      }
    }
+ }
+
+ .titulo-principal{
+    font-family: Anabele;
+    src: url("/src/font/Anabele.otf") format("opentype");
  }
 
  

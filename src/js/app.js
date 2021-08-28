@@ -42,7 +42,8 @@ function mostrarDestacados(){
             card.dataset.bsTarget = "#productoSeleccionado";
     
             const imagen = document.createElement('img');
-            imagen.src = producto.img;
+            imagen.src = producto.img[0];
+            imagen.alt = "Imagen Vela Destacada"
     
             const tituloProducto = document.createElement('p');
             tituloProducto.classList.add('tituloProducto');
@@ -67,13 +68,15 @@ function mostrarProductos(arregloProductos) {
 
     arregloProductos.forEach(producto => {
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('card', 'animate__animated', 'animate__fadeIn');
         card.dataset.id = producto.id
         card.dataset.bsToggle = "modal";
         card.dataset.bsTarget = "#productoSeleccionado";
 
         const imagen = document.createElement('img');
-        imagen.src = producto.img;
+        imagen.src = producto.img[0];
+        imagen.alt = "Imagen Vela"
+        imagen.classList.add('animate__animated', 'animate__fadeInUp');
 
         const tituloProducto = document.createElement('p');
         tituloProducto.classList.add('tituloProducto');
@@ -105,12 +108,12 @@ function productoSeleccionado(){
                     <h3>Vela</h3>
                     <h2>${productoEcontrado.nombre}</h2>
                     <div class = "estrellas">
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
-                        <img src = './src/img/Estrella-06.png'/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
+                        <img src = './src/img/Estrella-06.png' alt="Imagen Estrella"/>
                     </div>
                     <p>${productoEcontrado.descripcion}</p>
                     <div class = "aromas">
@@ -121,10 +124,12 @@ function productoSeleccionado(){
                     </div>
                 </div>
                 <div class = "imagenVela">
-                    <img src = ${productoEcontrado.img} />
+                   
                 </div>
             `
-            const modalFooter = document.querySelector('.modal-Footer');
+            mostrarSlider(idProducto);
+
+            const modalFooter = document.querySelector('.modal-footer');
             modalFooter.innerHTML = `
                 <div class="informacionPago">
                     <p><span>Medios de pago : </span> Efectivo o transferencia Bancaria</p>
@@ -132,7 +137,6 @@ function productoSeleccionado(){
                   </div>
                 <a href="#" class="btnComprar" data-id = ${productoEcontrado.id}>Comprar</a>
             `
-
             comprarProducto();
         })
     })
@@ -156,4 +160,61 @@ function limpiarHtml() {
     while (contenedorCardProductos.firstChild) {
         contenedorCardProductos.removeChild(contenedorCardProductos.firstChild)
     }
+}
+
+function mostrarSlider(id){
+
+    const swipperContainer = document.createElement('div');
+    swipperContainer.classList.add('swiper', 'swipper-imagenes-velas')
+
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.classList.add('swiper-wrapper')
+
+    const swiperNext = document.createElement('div');
+    swiperNext.setAttribute('aria-labelledby', 'siguiente')
+    swiperNext.classList.add('swiper-button-next');
+
+    const swiperPreview = document.createElement('div');
+    swiperPreview.setAttribute('aria-labelledby', 'anterior')
+    swiperPreview.classList.add('swiper-button-prev');
+
+    const swiperPagination = document.createElement('div');
+    swiperPagination.setAttribute('aria-labelledby', 'paginacion')
+    swiperPagination.classList.add('swiper-pagination');
+
+    swipperContainer.appendChild(swiperWrapper);
+    swipperContainer.appendChild(swiperNext);
+    swipperContainer.appendChild(swiperPreview);
+    swipperContainer.appendChild(swiperPagination);
+
+    productos.forEach(producto => {
+
+        if (producto.id === id) {
+            producto.img.forEach(imagen =>{
+                const swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide', 'swiper-slide-imagen-velas');
+    
+                swiperSlide.innerHTML = `
+                    <img src = ${imagen} alt = "imagen vela">
+                `
+                swiperWrapper.appendChild(swiperSlide);
+            })
+        }
+    })
+    
+    document.querySelector('.imagenVela').appendChild(swipperContainer);
+
+    var swiper = new Swiper(".swipper-imagenes-velas", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 }
