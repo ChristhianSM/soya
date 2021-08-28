@@ -379,12 +379,6 @@ main {
   padding-top: 9rem;
 }
 
-@media (max-width: 768px) {
-  main {
-    padding-top: 15rem;
-  }
-}
-
 .contenedor {
   max-width: 150rem;
   width: 90%;
@@ -623,6 +617,12 @@ main {
   align-items: center;
 }
 
+@media (max-width: 488px) {
+  .swiper-slide {
+    height: 500px;
+  }
+}
+
 .swiper-slide-imagen-velas {
   height: 400px;
 }
@@ -725,6 +725,18 @@ main {
   gap: 1rem;
 }
 
+@media (max-width: 488px) {
+  #destacados .ventajas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+  }
+}
+
 #destacados .ventajas img {
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -733,9 +745,7 @@ main {
 
 @media (max-width: 488px) {
   #destacados .ventajas img {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
+    width: 50%;
   }
 }
 
@@ -796,21 +806,25 @@ main {
   margin-top: 4rem;
 }
 
-.quines-somos h2 {
-  font-size: 5rem;
-}
-
-.quines-somos p {
+.quines-somos .overlay-text {
+  color: white;
   font-size: 2.4rem;
 }
 
-.quines-somos .overlay-text {
-  color: beige !important;
+@media (max-width: 488px) {
+  .quines-somos .overlay-text {
+    font-size: 1.6rem;
+  }
 }
 
-@media (max-width: 768px) {
-  .quines-somos .overlay-text p {
-    font-size: 2rem;
+.quines-somos .titulo-principal {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 488px) {
+  .quines-somos .titulo-principal {
+    font-size: 3rem;
   }
 }
 
@@ -828,6 +842,7 @@ main {
   src: url("/src/font/Anabele.otf") format("opentype");
   font-size: 5rem;
   color: #2b2d42;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 488px) {
@@ -1088,9 +1103,6 @@ main {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 488px) {
@@ -1157,12 +1169,6 @@ main {
   }
 }
 
-@media (max-width: 488px) {
-  #mediosPago .contenedorMedios .cardPago .titulo {
-    font-size: 1.8rem;
-  }
-}
-
 #mediosPago .contenedorMedios .cardPago p {
   font-size: 2.3rem;
   color: black;
@@ -1170,13 +1176,12 @@ main {
 
 @media (max-width: 768px) {
   #mediosPago .contenedorMedios .cardPago p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 488px) {
   #mediosPago .contenedorMedios .cardPago p {
-    font-size: 1.3rem;
     width: 80%;
     margin: 0 auto;
   }
@@ -1209,7 +1214,6 @@ main {
 
 .footer .redes a {
   text-decoration: none;
-  margin-right: 5rem;
   color: #fff;
   width: 5rem;
 }

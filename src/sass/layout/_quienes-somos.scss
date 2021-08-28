@@ -19,24 +19,29 @@
     background-color: #24263d;
     color: beige;
     margin-top: 4rem;
- }
- .quines-somos h2{
-    font-size: 5rem;
- }
- 
- .quines-somos p{
-    font-size: 2.4rem;
- }
 
- .quines-somos .overlay-text{
-   color: beige !important;
+    .overlay-text {
+      color: white;
+      font-size: 2.4rem;
 
-   p{
-      @include tablet {
-         font-size: 2rem;
+      @include telefono {
+         font-size: 1.6rem;
+      }
+    }
+
+    .titulo-principal {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+
+      @include telefono {
+         font-size: 3rem;
       }
    }
+
+    
+
  }
+
 
  .titulo-principal{
     font-family: Anabele;

@@ -65,13 +65,19 @@
         align-items: center;
         gap: 1rem;
 
+        @include telefono {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
         img {
             grid-column-start: 2;
             grid-column-end: 3;
 
             @include telefono {
-                grid-column-start: 1;
-                grid-column-end: 3;
+                width: 50%;
+                
             }
         }
 

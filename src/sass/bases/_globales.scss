@@ -34,10 +34,6 @@ img {
 
 main {
     padding-top:9rem ;
-
-    @include tablet {
-        padding-top:15rem ;
-    }
 }
 
 .contenedor{

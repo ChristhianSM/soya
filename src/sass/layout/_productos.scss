@@ -6,6 +6,7 @@
         src: url("/src/font/Anabele.otf") format("opentype");
         font-size: 5rem;
         color: $colorTexto;
+        margin-bottom: 2rem;
 
         @include telefono {
             font-size: 3rem;

@@ -7,7 +7,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
-        align-items: center;
 
         @include telefono {
             grid-template-columns: repeat(1, 1fr);
@@ -59,10 +58,6 @@
                 @include tablet {
                     font-size: 2rem;
                 }
-
-                @include telefono {
-                    font-size: 1.8rem;
-                }
                 
             }
 
@@ -71,11 +66,10 @@
                 color: black;
 
                 @include tablet {
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                 }
 
                 @include telefono {
-                    font-size: 1.3rem;
                     width: 80%;
                     margin: 0 auto;
                 }
