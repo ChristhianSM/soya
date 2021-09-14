@@ -151,7 +151,7 @@ function comprarProducto(){
 
         const productoEcontrado = productos.find(elemento => elemento.id === idProducto);
         const {descripcion, nombre, precio} = productoEcontrado;
-        const URL = `https://api.whatsapp.com/send?phone=+051959686193&text=*_Soya_*%0A*Hola ¿Qué tal como estas?*%0A%0A*Quisiera confirmar la siguiente Orden:*%0A*${nombre}   ->Precio: $${precio}`
+        const URL = `https://api.whatsapp.com/send?phone=+ 542227628125&text=*_Soya_*%0A*Hola ¿Qué tal como estas?*%0A%0A*Quisiera confirmar la siguiente Orden:*%0A*${nombre}   ->Precio: A confirmar con el vendedor`
         window.open(URL, "_blank")
     })
 }

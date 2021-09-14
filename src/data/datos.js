@@ -20,7 +20,7 @@ export const productos = [
         id: 2,
         nombre: "Bubbles",
         precio : 1500,
-        img : ["../src/img/bubbles-3.jpg", "../src/img/bubbles-2.jpg","../src/img/bubbles-1.jpg"],
+        img : ["../src/img/bubbles-prueba.jpg", "../src/img/bubbles-2.jpg","../src/img/bubbles-1.jpg"],
         destacado : true,
         aromas : [
             "Coco Vainilla",
